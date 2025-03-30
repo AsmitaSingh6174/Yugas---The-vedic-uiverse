@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>our team members</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700&display=swap');
@@ -18,7 +18,7 @@
     margin: 0;
     padding:0;
     box-sizing:border-box;
-    font-family:'poppons',sans-serif;
+    font-family:'poppins',sans-serif;
 }
 body
 {
@@ -29,26 +29,7 @@ body
     background-image: url(Images/bg.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column; /* Added to stack content vertically */
-}
-
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure it's above other elements */
-}
-
-.back-button:hover {
-    background-color: #ddd;
+    flex-direction: column; /* Arrange container and back button vertically */
 }
 
 .container
@@ -260,115 +241,124 @@ body
 {
     background: #2196f3;
 }
+
+/* Style for the back button */
+.back-button {
+    position: absolute; /* Or fixed, depending on desired behavior */
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.back-button:hover {
+    background-color: #555;
+}
     </style>
 </head>
 <body>
-
-    <a href="javascript:history.back()" class="back-button">Back</a>
+    <a href="home.html" class="back-button">Back to Home</a>
 
     <div class="container">
 
-       <div class="icon">
+        <div class="icon">
         <div class="imgBx active" style="--i:1;" data-id="content1">
-          <img src="Images/Team/Photo1.jpg" alt="">
+            <img src="Images/Team/Photo1.jpg" alt="">
         </div>
         <div class="imgBx" style="--i:2;"data-id="content2">
             <img src="Images/Team/Photo2.jpg" alt="">
-          </div>
-          <div class="imgBx ac" style="--i:3;"data-id="content3">
+        </div>
+        <div class="imgBx" style="--i:3;"data-id="content3">
             <img src="Images/Team/Photo3.jpg" alt="">
-          </div>
-          <div class="imgBx" style="--i:4;"data-id="content4">
+        </div>
+        <div class="imgBx" style="--i:4;"data-id="content4">
             <img src="Images/Team/Photo4.jpg" alt="">
-          </div>
+        </div>
        </div>
-       <div class="content">
+        <div class="content">
         <div class="contentBx active" id="content1">
-          <div class="card">
-            <div class="imgBx">
-              <img src="Images/Team/Photo1.jpg" alt="">
-            </div>
-            <div class="textBx">
-              <h2>Asmita Singh<br><span>Web Developer</span></h2>
-              <ul class="sci">
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Images/Team/Photo1.jpg" alt="Asmita Singh">
+                </div>
+                <div class="textBx">
+                    <h2>Asmita Singh<br><span>Web Developer</span></h2>
+                    <ul class="sci">
+                        <li><a href="#" onclick="window.location=' https://www.linkedin.com/in/asmita-singh-381803355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" onclick="window.location='https://www.instagram.com/asmi.ta_singh?igsh=b2t4aHRhazV6eDVt '"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
 
+                </div>
             </div>
-          </div>
         </div>
         <div class="contentBx" id="content2">
-          <div class="card">
-            <div class="imgBx">
-              <img src="Images/Team/Photo2.jpg" alt="">
-            </div>
-            <div class="textBx">
-              <h2>Shreya Singh<br><span>Web Developer</span></h2>
-              <ul class="sci">
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Images/Team/Photo2.jpg" alt="Shreya Singh">
+                </div>
+                <div class="textBx">
+                    <h2>Shreya Singh<br><span>Web Developer</span></h2>
+                    <ul class="sci">
+                        <li><a href="#" onclick="window.location='https://www.linkedin.com/in/shreya-singh-79ba80321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" onclick="window.location='https://www.instagram.com/shrey_asingh_27?igsh=MWh3bTUwNWltd2QwNg=='"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
 
+                </div>
             </div>
-          </div>
         </div>
         <div class="contentBx" id="content3">
-          <div class="card">
-            <div class="imgBx">
-              <img src="Images/Team/Photo3.jpg" alt="">
-            </div>
-            <div class="textBx">
-              <h2>Sushmita Santra<br><span>Web Developer</span></h2>
-              <ul class="sci">
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Images/Team/Photo3.jpg" alt="Sushmita Santra">
+                </div>
+                <div class="textBx">
+                    <h2>Sushmita Santra<br><span>Web Developer</span></h2>
+                    <ul class="sci">
+                        <li><a href="#" onclick="window.location='https://www.linkedin.com/in/sushmita-santra-967018321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" onclick="window.location='https://www.instagram.com/sweet_coco_20?igsh=eHA4ZTBwMXY1bXNm'"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
 
+                </div>
             </div>
-          </div>
         </div>
         <div class="contentBx" id="content4">
-          <div class="card">
-            <div class="imgBx">
-              <img src="Images/Team/Photo4.jpg" alt="">
-            </div>
-            <div class="textBx">
-              <h2>Ankit Mishra<br><span>CSE Graduate(2024)</span></h2>
-              <ul class="sci">
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              </ul>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="Images/Team/Photo4.jpg" alt="Ankit Mishra">
+                </div>
+                <div class="textBx">
+                    <h2>Ankit Mishra<br><span>CSE Graduate(2024)</span></h2>
+                    <ul class="sci">
+                        <li><a href="#" onclick="window.location='https://www.linkedin.com/in/ankit-mishra-489a40210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" onclick="window.location='https://www.instagram.com/imankit_07?igsh=cjFlczZoOXU4YzN2'"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
 
+                </div>
             </div>
-          </div>
         </div>
-       </div>
+        </div>
     </div>
     <script>
-      const backButton = document.querySelector('.back-button');
-    
-      backButton.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        window.location.href = 'home.html'; // Redirect to home.html
-      });
-    
-      let imgBx = document.querySelectorAll('.imgBx');
-      let contentBx =document.querySelectorAll('.contentBx');
-    
-      for (let i=0; i<imgBx.length; i++){
-        imgBx[i].addEventListener('mouseover',function(){
-          for(let i=0; i<contentBx.length; i++){
-            contentBx[i].className='contentBx';
-          }
-          document.getElementById(this.dataset.id).className='contentBx active';
-          for (let i=0; i<imgBx.length; i++){
-            imgBx[i].className='imgBx';
-          }
-          this.className='imgBx active';
-        })
-      }
+        let imgBx = document.querySelectorAll('.imgBx');
+        let contentBx =document.querySelectorAll('.contentBx');
+
+        for (let i=0; i<imgBx.length; i++){
+            imgBx[i].addEventListener('mouseover',function(){
+                for(let i=0; i<contentBx.length; i++){
+                    contentBx[i].className='contentBx';
+                }
+                document.getElementById(this.dataset.id).className='contentBx active';
+                for (let i=0; i<imgBx.length; i++){
+                    imgBx[i].className='imgBx';
+                }
+                this.className='imgBx active';
+            })
+        }
     </script>
-    
-    </body>
-    </html>
+</body>
+</html>
