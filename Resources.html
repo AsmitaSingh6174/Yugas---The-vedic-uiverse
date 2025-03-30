@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="design.css">   
+<title>Books</title>
+</head>
+<style>
+ 
+.nav-link:hover{
+  background-color:rgba(255, 255, 0, 0.911);
+  border-radius: 4px;
+}
+    .txt{
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(87, 1, 1);
+    text-shadow: 1px 2px 3px;
+  }.log{
+  text-decoration: none;
+}
+</style>
+<body>
+    <!-- Logo&Heading -->
+    <div class="heading">
+      <div class="row">
+        <div class="col-3">
+          <img src="Images/logo.png " class="mb-2 mx-3 mt-2" style="height: 80px;width: 80px;display: 1;">
+     </div>
+        <div class="col-6">
+          <h1 class=" text-center mt-4" >Yugas : The Vedic Universe</h1>
+        </div>
+      </div>
+     
+     </div>
+     <!-- Navbar -->
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="#" class="nav__logo">
+             <i class="ri-planet-line"></i> Vedic Universe
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+
+       <!--=============== NAV MENU ===============-->
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="Home.html" class="nav__link">Home</a></li>
+             
+             <!--=============== DROPDOWN 1 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link" >
+                   Yugas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="Yuga.html" class="dropdown__link">
+                         <i class="ri-pie-chart-line"></i> Intoduction 
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="Fyuga.html" class="dropdown__link">
+                         <i class="ri-arrow-up-down-line"></i> The Four Yugas
+                      </a>
+                   </li>
+             </ul>
+             <!--=============== DROPDOWN 2 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Vedas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="vedas.html" class="dropdown__link">
+                         <i class="ri-user-line"></i> Introduction
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="Fveda.html" class="dropdown__link">
+                         <i class="ri-lock-line"></i> The Four Vedas
+                      </a>
+                   </li>
+
+                </ul>
+                <li><a href="Resources.html" class="nav__link">Resources</a></li>
+
+             <li><a href="Philosophy.html" class="nav__link">Philosophy</a></li>
+             <li><a href="Choice.html" class="nav__link">Gallery</a></li>
+                
+             </li>
+            </ul>
+          
+          
+       </div>
+    </nav>
+ </header>
+
+    <!-- Navbar end -->
+
+         <br>
+    <p class="h1 txt text-center"><u>Ancient Scriptures</u></p><br>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+            <div class="card">
+                <img src="Images/books/rigved.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Rigveda'">Read</a></button></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                <div class="card">
+                    <img src="Images/books/samved.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Samaveda'">Read</button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                    <div class="card">
+                        <img src="Images/books/yajurved.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">
+                            <button class="btn btn-primary" type="button" onclick="window.loaction='https://en.wikipedia.org/wiki/Yajurveda'">Read</button>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                        <div class="card">
+                            <img src="Images/books/atharvaved.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">
+                                <button class="btn btn-primary" type="button" onclick="window.loaction='https://en.wikipedia.org/wiki/Atharvaveda'">Read</a></button>
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+     </div><!--row end-->
+      </div><!--1 container end-->
+
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+            <div class="card">
+                <img src="Images/books/mundakaU.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                 
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">
+                    <button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Mundaka_Upanishad'">Read</button>
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                <div class="card">
+                    <img src="Images/books/chandyogaU.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted"><button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Chandogya_Upanishad'">Read</button></small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                    <div class="card">
+                        <img src="Images/books/vishnupuran.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">
+                            <button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Vishnu_Purana'">Read</button>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                            <div class="card">
+                                <img src="Images/books/bhagwatpuran.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                 
+                                </div>
+                                <div class="card-footer">
+                                  <small class="text-muted"><button class="btn btn-primary" type="button" onclick="window.location='https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%97%E0%A4%B5%E0%A4%A4_%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A3'">Read</button></small>
+                                </div>
+                              </div>
+                            </div>
+     </div><!--row end-->
+      </div><!--2 container end-->
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+            <div class="card">
+                <img src="Images/books/bramhanpuran.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Brahma_Purana'">Read</button></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                <div class="card">
+                    <img src="Images/books/ramayana.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">
+                        <button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Ramayana'">Read</button>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                    <div class="card">
+                        <img src="Images/books/mahabharat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">
+                            <button class="btn btn-primary" type="button" onclick="window.location=''">Read</button>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-sm-12 mt-5">
+                        <div class="card">
+                            <img src="Images/books/manusmriti.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">
+                                <button class="btn btn-primary" type="button" onclick="window.location='https://en.wikipedia.org/wiki/Mahabharata'">Read</button>
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+     </div><!--row end-->
+      </div><!--1 container end-->
+
+
+       <br>            
+      <div class="container-fluid">
+ 
+        
+    <!-- Footer start -->
+    <div class="container-fluid">
+
+      <footer style="background-color: #302e2b;">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 footer-logo">
+             <img src="Images/logo.png" alt="" style="height: 110px;width: 110px;"> 
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3 text-light">The Cosmic Universe Cycle</h5>
+            <p>Hinduism is a vast and profound spiritual tradition that teaches righteousness, devotion, karma, and self-realization. Though the world is in Kali Yuga, Hinduism believes that spiritual efforts can still lead to moksha (liberation).
+            </p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1 text-light">Also Visit</h5>
+              <a href="Home.html">Home</a><br>
+              <a href="About.html">About</a><br>
+              <a href="Resources.html">Resources</a><br>
+              <a href="Choice.html">Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          Thanks For Visting  
+        </div>
+      
+      </footer>
+    </div>
+      <!-- Footer end  -->
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <title>The Four Vedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Yuga.html">Yugas</a>
+            <a href="vedas.html">Vedas</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="Images/books/Rig veda.jpg">
+                <div class="content">
+                    <div class="author text-dark">404 Not Found</div>
+                    <div class="title">Rig Veda</div>
+                <br>
+                    <div class="des h5">
+                        <h5 style="text-transform: uppercase; font-size: 100%; color: black; font-weight: bolder;">The oldest and most important Veda, composed of hymns (suktas) dedicated to various deities like Agni, Indra, and Varuna. It is a collection of praises, prayers, and philosophical insights about the cosmos and existence.    
+                   </h5> </div>
+                    <div class="buttons">
+                        <button onclick="href()" id="button"> SEE MORE</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Yajur veda.jpg">
+                <div class="content">
+                    <div class="author">404 Not Found</div>
+                    <div class="title">Yajur Veda</div>
+                    <br>
+                    <div class="des h5">
+                        <h5 style="text-transform: uppercase; font-size: 100%; color: black; font-weight: bolder;">A manual for priests conducting rituals and sacrifices (yajnas). It provides instructions on how to perform ceremonies correctly and includes both prose and verse formulas.
+                   </h5> </div>
+                    <div class="buttons">
+                        <button onclick="href()" id="button">SEE MORE</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Samaveda.jpg">
+                <div class="content">
+                    <div class="author">404 Not Found</div>
+                    <div class="title">Sama Veda</div>
+                    <br>
+                    <div class="des h5">
+                    <h5 style="text-transform: uppercase; font-size: 100%; color: black; font-weight: bolder;"> The Veda of melodies and chants, mainly derived from the Rigveda but set to music. It is considered the root of Indian classical music and is used in devotional singing and rituals.
+                    </h5>   
+                    </div>
+                    <div class="buttons">
+                        <button onclick="href()" id="button">SEE MORE</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Atharvaveds.jpg">
+                <div class="content">
+                    <div class="author">404 Not Found</div>
+                    <div class="title">Atharva Veda</div>
+                    <br>
+                    <div class="des h5">
+       <h5 style="text-transform: uppercase; font-size: 100%; color: black; font-weight: bolder;"> A collection of hymns, spells, and incantations related to everyday life, health, and spiritual well-being. It includes knowledge of healing, protection, and societal rules, making it unique among the Vedas.
+                 </h5>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="href()" id="button">SEE MORE</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="Images/books/Rig veda.jpg">
+                <div class="content">
+                    <div class="title">
+                        Rig Veda
+                    </div>
+                    <div class="description">
+                        Vibrant collection of Hymns
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Yajur veda.jpg">
+                <div class="content">
+                    <div class="title">
+                        Yajur Veda
+                    </div>
+                    <div class="description">
+                        Manual for Sacred Rituals
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Samaveda.jpg">
+                <div class="content">
+                    <div class="title">
+                        Sama Veda
+                    </div>
+                    <div class="description">
+                        Transforms Sacred Chants into musical art.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/books/Atharvaveds.jpg">
+                <div class="content">
+                    <div class="title">
+                        Atharva Veda
+                    </div>
+                    <div class="description">
+                        Advice with Mystical Insights
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="img.js"></script>
+    <script>
+        function href(){
+            window.location.href='vedas.html'
+        }
+    </script>
+</body>
+</html>
