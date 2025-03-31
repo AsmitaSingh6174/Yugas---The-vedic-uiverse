@@ -1,239 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
     <title>Divine Gallery</title>
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design.css" />
     <style>
-      p{
-         font-family: Georgia, 'Times New Roman' , Times, serif;
-      
+      p {
+        font-family: Georgia, "Times New Roman", Times, serif;
       }
- .txt{
-    font-family: Helvetica;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(19, 0, 0);
-    text-shadow: 1px 2px 3px;
-  } 
+      .txt {
+        font-family: Helvetica;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(19, 0, 0);
+        text-shadow: 1px 2px 3px;
+      }
 
-.options {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+      .options {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-.option {
-    display: inline-block;
-    margin: 10px;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+      .option {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 30px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
 
-.option:hover {
-    background-color: #0056b3;
-}
+      .option:hover {
+        background-color: #0056b3;
+      }
 
-@media (min-width: 600px) {
-    .options {
-        flex-direction: row;
-    }
-}  
+      @media (min-width: 600px) {
+        .options {
+          flex-direction: row;
+        }
+      }
     </style>
-</head>
-<body class="px-2">
-       <!-- Logo&Heading -->
-     <div class="heading">
+  </head>
+  <body class="px-2">
+    <!-- Logo&Heading -->
+    <div class="heading">
       <div class="row">
         <div class="col-3">
-          <img src="Images/logo.png " class="mb-2 mx-3 mt-2" style="height: 80px;width: 80px;display: 1;">
-     </div>
+          <img
+            src="Images/logo.png "
+            class="mb-2 mx-3 mt-2"
+            style="height: 80px; width: 80px; display: 1"
+          />
+        </div>
         <div class="col-6">
-          <h1 class=" text-center mt-4" >Yugas : The Vedic Universe</h1>
+          <h1 class="text-center mt-4">Yugas : The Vedic Universe</h1>
         </div>
       </div>
-     
-     </div>
-     <!-- Navbar -->
-  <header class="header">
-    <nav class="nav container">
-       <div class="nav__data">
+    </div>
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
           <a href="#" class="nav__logo">
-             <i class="ri-planet-line"></i> Vedic Universe
+            <i class="ri-planet-line"></i> Vedic Universe
           </a>
-          
+
           <div class="nav__toggle" id="nav-toggle">
-             <i class="ri-menu-line nav__burger"></i>
-             <i class="ri-close-line nav__close"></i>
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
           </div>
-       </div>
+        </div>
 
-       <!--=============== NAV MENU ===============-->
-       <div class="nav__menu" id="nav-menu">
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-             <li><a href="Home.html" class="nav__link">Home</a></li>
-             
-             <!--=============== DROPDOWN 1 ===============-->
-             <li class="dropdown__item">
-               <div class="nav__link" >
-                  Yugas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-               </div>
+            <li><a href="Home.html" class="nav__link">Home</a></li>
 
-               <ul class="dropdown__menu">
-                  <li>
-                     <a href="Yuga.html" class="dropdown__link">
-                        <i class="ri-pie-chart-line"></i> Intoduction 
-                     </a>                          
-                  </li>
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Yugas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
 
-                  <li>
-                     <a href="Fyuga.html" class="dropdown__link">
-                        <i class="ri-arrow-up-down-line"></i> The Four Yugas
-                     </a>
-                  </li>
-            </ul>
-             <!--=============== DROPDOWN 2 ===============-->
-             <li class="dropdown__item">
-               <div class="nav__link">
-                  Vedas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-               </div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="Yuga.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Intoduction
+                  </a>
+                </li>
 
-               <ul class="dropdown__menu">
-                  <li>
-                     <a href="vedas.html" class="dropdown__link">
-                        <i class="ri-user-line"></i> Introduction
-                     </a>                          
-                  </li>
+                <li>
+                  <a href="Fyuga.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> The Four Yugas
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Vedas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
 
-                  <li>
-                     <a href="Fveda.html" class="dropdown__link">
-                        <i class="ri-lock-line"></i> The Four Vedas
-                     </a>
-                  </li>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="vedas.html" class="dropdown__link">
+                    <i class="ri-user-line"></i> Introduction
+                  </a>
+                </li>
 
-               </ul>
-            
-                <li><a href="Resources.html" class="nav__link">Resources</a></li>
-             <li><a href="Choice.html" class="nav__link">Gallery</a></li>
-                
-             </li>
-            </ul>
-          
-          
-       </div>
-    </nav>
- </header>
+                <li>
+                  <a href="Fveda.html" class="dropdown__link">
+                    <i class="ri-lock-line"></i> The Four Vedas
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-          <!-- Navbar end -->
-   
-          <div class="container mt-5 ">
-        <h1 class="text-center txt"><u>Divine Gallery</u></h1><br>
-        <div class="dess h5">
-         <p><b>God is one - </b>the Supreme Divine, the ultimate reality that is beyond form, name, and attributes. Hinduism acknowledges this truth but also understands that different people connect with the Divine in different ways.
-<br><br>
-            Just like one sun is called by different names in various languages, the one God is worshipped in different forms to help individuals relate to divine qualities—wisdom, strength, love, or protection.
-            <br><br>
-            At its core, Hindu philosophy teaches that all deities are manifestations of the same Supreme Being (Brahman), whether one worships Shiva, Vishnu, Durga, or any other form. The path may vary, but the destination is the same—realization of the one ultimate truth.
-         </p><br><br>
-         <h5>1. God as the Ultimate Reality :</h5>
+            <li><a href="Resources.html" class="nav__link">Resources</a></li>
+            <li><a href="Choice.html" class="nav__link">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<p>There is one supreme, all-pervading divine presence—often referred to as Brahman in Vedanta, Parabrahman in Bhagavad Gita, or simply God in a universal sense.
+    <!-- Navbar end -->
 
-   This divine presence is beyond form, gender, or limitation.
-   </p>
+    <div class="container mt-5">
+      <h1 class="text-center txt"><u>Divine Gallery</u></h1>
+      <br />
+      <div class="dess h5">
+        <p>
+          <b>God is one - </b>the Supreme Divine, the ultimate reality that is
+          beyond form, name, and attributes. Hinduism acknowledges this truth
+          but also understands that different people connect with the Divine in
+          different ways. <br /><br />
+          Just like one sun is called by different names in various languages,
+          the one God is worshipped in different forms to help individuals
+          relate to divine qualities—wisdom, strength, love, or protection.
+          <br /><br />
+          At its core, Hindu philosophy teaches that all deities are
+          manifestations of the same Supreme Being (Brahman), whether one
+          worships Shiva, Vishnu, Durga, or any other form. The path may vary,
+          but the destination is the same—realization of the one ultimate truth.
+        </p>
+        <br /><br />
+        <h5>1. God as the Ultimate Reality :</h5>
 
-<br>
-<h5>2. Avatars as Manifestations :</h5>
+        <p>
+          There is one supreme, all-pervading divine presence—often referred to
+          as Brahman in Vedanta, Parabrahman in Bhagavad Gita, or simply God in
+          a universal sense. This divine presence is beyond form, gender, or
+          limitation.
+        </p>
 
-<p>The term Avatar (from Sanskrit: Avatāra, meaning "descent") refers to divine incarnations that take physical form to fulfill a purpose, usually to restore Dharma (cosmic order) when it is threatened by chaos or evil.
+        <br />
+        <h5>2. Avatars as Manifestations :</h5>
 
-   These avatars are not separate gods but expressions of the same Supreme Being, appearing in different forms to suit the needs of time and circumstances.
-   </p>
-<br>
+        <p>
+          The term Avatar (from Sanskrit: Avatāra, meaning "descent") refers to
+          divine incarnations that take physical form to fulfill a purpose,
+          usually to restore Dharma (cosmic order) when it is threatened by
+          chaos or evil. These avatars are not separate gods but expressions of
+          the same Supreme Being, appearing in different forms to suit the needs
+          of time and circumstances.
+        </p>
+        <br />
 
-<h5>3. Examples in Hinduism :</h5>
+        <h5>3. Examples in Hinduism :</h5>
 
-<p><b>Vishnu’s Ten Avatars (Dashavatara) –</b> Vishnu, the preserver, is believed to have ten major avatars, including Rama, Krishna, and Narasimha, who incarnated to restore righteousness.
-<br><br>
-   <b>Shiva’s Manifestations –</b> Shiva takes different forms like Rudra, Bhairava, and Dakshinamurti to fulfill various cosmic roles.
-   <br><br>
-   <b>Devi’s Incarnations –</b> The Divine Mother manifests as Durga, Kali, Parvati, and Saraswati to protect devotees and destroy evil.
-   </p>
-<br>
+        <p>
+          <b>Vishnu’s Ten Avatars (Dashavatara) –</b> Vishnu, the preserver, is
+          believed to have ten major avatars, including Rama, Krishna, and
+          Narasimha, who incarnated to restore righteousness. <br /><br />
+          <b>Shiva’s Manifestations –</b> Shiva takes different forms like
+          Rudra, Bhairava, and Dakshinamurti to fulfill various cosmic roles.
+          <br /><br />
+          <b>Devi’s Incarnations –</b> The Divine Mother manifests as Durga,
+          Kali, Parvati, and Saraswati to protect devotees and destroy evil.
+        </p>
+        <br />
 
-<h5>4. Parallels in Other Belief Systems :</h5>
+        <h5>4. Parallels in Other Belief Systems :</h5>
 
-<p>In <b>Christianity</b>, God manifests as the Holy Trinity (Father, Son, and Holy Spirit), yet remains one.
-<br><br>
-   In <b>Islam</b>, God (Allah) has 99 names, each describing different attributes of the same divine essence.
-<br><br>
-   In <b>Buddhism</b>, the concept of Bodhisattvas mirrors the idea of divine figures appearing to guide humanity.
-   </p>
-   <br>
-<h5>Why Multiple Avatars?</h5>
+        <p>
+          In <b>Christianity</b>, God manifests as the Holy Trinity (Father,
+          Son, and Holy Spirit), yet remains one. <br /><br />
+          In <b>Islam</b>, God (Allah) has 99 names, each describing different
+          attributes of the same divine essence. <br /><br />
+          In <b>Buddhism</b>, the concept of Bodhisattvas mirrors the idea of
+          divine figures appearing to guide humanity.
+        </p>
+        <br />
+        <h5>Why Multiple Avatars?</h5>
 
- <p>Since human beings exist in diverse cultures, time periods, and mindsets, the divine appears in forms they can relate to. The same eternal truth is revealed in different ways, so people of all ages and backgrounds can connect with it.
-
-   In essence, God is like the ocean, and the avatars are waves rising from it—distinct in form, but one in essence.
-   </p>
-</div>
-        <div class="options">
-         <button class="veda mt-5" style="place-content: center; width: 100%;" onclick="href()">Avatars of Lord Vishnu</button>
-        </div><br><br>
-        <div class="options">
-         <button class="veda mt-5" style="place-content: center; width: 100%;" onclick="href1()">Divine Pantheon Gods</button>
+        <p>
+          Since human beings exist in diverse cultures, time periods, and
+          mindsets, the divine appears in forms they can relate to. The same
+          eternal truth is revealed in different ways, so people of all ages and
+          backgrounds can connect with it. In essence, God is like the ocean,
+          and the avatars are waves rising from it—distinct in form, but one in
+          essence.
+        </p>
+      </div>
+      <div class="options">
+        <button
+          class="veda mt-5"
+          style="place-content: center; width: 100%"
+          onclick="href()"
+        >
+          Avatars of Lord Vishnu
+        </button>
+      </div>
+      <br /><br />
+      <div class="options">
+        <button
+          class="veda mt-5"
+          style="place-content: center; width: 100%"
+          onclick="href1()"
+        >
+          Divine Pantheon Gods
+        </button>
       </div>
     </div>
-<br><br><br>
+    <br /><br /><br />
     <!-- Footer start -->
     <div class="container-fluid mt-5">
-
-      <footer style="background-color: #302e2b;">
+      <footer style="background-color: #302e2b">
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-3 col-md-6 mb-4 footer-logo">
-             <img src="Images/logo.png" alt="" style="height: 110px;width: 110px;"> 
+              <img
+                src="Images/logo.png"
+                alt=""
+                style="height: 110px; width: 110px"
+              />
             </div>
             <div class="col-lg-6 col-md-12 mb-4">
               <h5 class="mb-3 text-light">The Cosmic Universe Cycle</h5>
-            <p>Hinduism is a vast and profound spiritual tradition that teaches righteousness, devotion, karma, and self-realization. Though the world is in Kali Yuga, Hinduism believes that spiritual efforts can still lead to moksha (liberation).
-            </p>
-            </div> 
-            
+              <p>
+                Hinduism is a vast and profound spiritual tradition that teaches
+                righteousness, devotion, karma, and self-realization. Though the
+                world is in Kali Yuga, Hinduism believes that spiritual efforts
+                can still lead to moksha (liberation).
+              </p>
+            </div>
+
             <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="mb-1 text-light">Also Visit</h5>
-              <a href="Home.html">Home</a><br>
-              <a href="About.html">About</a><br>
-              <a href="Resources.html">Resources</a><br>
+              <a href="Home.html">Home</a><br />
+              <a href="About.html">About</a><br />
+              <a href="Resources.html">Resources</a><br />
               <a href="Choice.html">Gallery</a>
             </div>
           </div>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          Thanks For Visting  
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          Thanks For Visting
         </div>
-      
       </footer>
     </div>
-      <!-- Footer end  -->
+    <!-- Footer end  -->
 
     <script>
-      function href(){
-         window.location.href='Gallery_Avtar.html'
-     }
-     function href1(){
-         window.location.href='Gallery_allgod.html'
-     }
+      function href() {
+        window.location.href = "Gallery_Avtar.html";
+      }
+      function href1() {
+        window.location.href = "Gallery_allgod.html";
+      }
     </script>
-</body>
+  </body>
 </html>
