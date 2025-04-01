@@ -6,91 +6,97 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="design.css" rel="stylesheet" type="text/css">
+    <script src="./js.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        showMenu('nav-toggle', 'nav-menu');
+      });
+  yes 
+    </script>
     <title>The Vedic Universe</title>
 </head>
 <body class="px-2">
-    <!-- Logo&Heading -->
-     <div class="heading">
-      <div class="row">
-        <div class="col-3">
-          <img src="Images/logo.png " class="mb-2 mx-3 mt-2" style="height: 80px;width: 80px;display: 1;">
-     </div>
-        <div class="col-6">
-          <h1 class=" text-center mt-4" >Yugas : The Vedic Universe</h1>
+   <!-- Logo&Heading -->
+   <div class="heading">
+    <div class="row">
+      <div class="col-3">
+        <img src="Images/logo.png " class="mb-2 mx-3 mt-2" style="height: 80px; width: 80px; display: 1" />
+      </div>
+      <div class="col-6">
+        <h1 class="text-center mt-4">Yugas : The Vedic Universe</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <i class="ri-planet-line"></i> Vedic Universe
+        </a>
+ 
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa fa-bars nav__burger"></i>
+          <i class="fa fa-times nav__close"></i>
         </div>
       </div>
-     
-     </div>
-        <!-- Navbar -->
-  <header class="header">
-    <nav class="nav container">
-       <div class="nav__data">
-          <a href="#" class="nav__logo">
-             <i class="ri-planet-line"></i> Vedic Universe
-          </a>
-          
-          <div class="nav__toggle" id="nav-toggle">
-             <i class="ri-menu-line nav__burger"></i>
-             <i class="ri-close-line nav__close"></i>
-          </div>
-       </div>
 
-       <!--=============== NAV MENU ===============-->
-       <div class="nav__menu" id="nav-menu">
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-             <li><a href="Home.html" class="nav__link">Home</a></li>
-             
-             <!--=============== DROPDOWN 1 ===============-->
-             <li class="dropdown__item">
-               <div class="nav__link" >
-                  Yugas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-               </div>
+            <li><a href="Home.html" class="nav__link">Home</a></li>
+   
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Yugas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+   
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="Yuga.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Intoduction
+                  </a>
+                </li>
+   
+                <li>
+                  <a href="Fyuga.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> The Four Yugas
+                  </a>
+                </li>
+              </ul>
+            </li>
+  
 
-               <ul class="dropdown__menu">
-                  <li>
-                     <a href="Yuga.html" class="dropdown__link">
-                        <i class="ri-pie-chart-line"></i> Intoduction 
-                     </a>                          
-                  </li>
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Vedas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+   
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="vedas.html" class="dropdown__link">
+                    <i class="ri-user-line"></i> Introduction
+                  </a>
+                </li>
+   
+                <li>
+                  <a href="Fveda.html" class="dropdown__link">
+                    <i class="ri-lock-line"></i> The Four Vedas
+                  </a>
+                </li>
+              </ul>
+            </li>
+   
+            <li><a href="Resources.html" class="nav__link">Resources</a></li>
+            <li><a href="Choice.html" class="nav__link">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-                  <li>
-                     <a href="Fyuga.html" class="dropdown__link">
-                        <i class="ri-arrow-up-down-line"></i> The Four Yugas
-                     </a>
-                  </li>
-            </ul>
-             <!--=============== DROPDOWN 2 ===============-->
-             <li class="dropdown__item">
-               <div class="nav__link">
-                  Vedas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-               </div>
-
-               <ul class="dropdown__menu">
-                  <li>
-                     <a href="vedas.html" class="dropdown__link">
-                        <i class="ri-user-line"></i> Introduction
-                     </a>                          
-                  </li>
-
-                  <li>
-                     <a href="Fveda.html" class="dropdown__link">
-                        <i class="ri-lock-line"></i> The Four Vedas
-                     </a>
-                  </li>
-
-               </ul>
-            
-                <li><a href="Resources.html" class="nav__link">Resources</a></li>
-
-             <li><a href="Choice.html" class="nav__link">Gallery</a></li>
-                
-             </li>
-            </ul>
-          
-          
-       </div>
-    </nav>
- </header>
 
     <!-- Navbar end -->
       <div class="container">
